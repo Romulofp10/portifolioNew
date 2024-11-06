@@ -7,12 +7,9 @@
 }
 
 @keyframes moveY {
-    from{
-        height: 0px;
-    }
-    to{
-        height: 368px;
-    }
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); } 
 }
 
 @keyframes pulse {
@@ -20,14 +17,14 @@
       background-color: #ffffff;
     }
     30% {
-      background-color: #c5dff8;
+      background-color: #d0e4fc;
     }
     50%{
-        background-color: #add3f7;
+        background-color: #cde1fa;
     }
 
     70%{
-        background-color: #c5dff8;
+        background-color: #d0e4fc;
     }
     
     100%{
@@ -107,6 +104,10 @@ body{
 .contacts-title{
     font-size: 2.2rem;
     margin-bottom: 15px;
+    animation-name: moveY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .services-title,
@@ -156,7 +157,8 @@ body{
     border-radius: 100%;
     margin-bottom: 20px;
     padding: 3px;
-    width: 130px;
+    height: 250px;
+    width: 200px;
 }
 
 .home-profession{
@@ -172,6 +174,11 @@ body{
 }
 
 .home-item-img{
+    filter: invert(1);
+    height: 25px;
+}
+
+.home-item-img:hover{
     filter: invert(1);
     height: 25px;
 }
@@ -345,7 +352,7 @@ body{
 .education-academic:hover,
 .education-certifications:hover{
     transition:   ease-out 1.8s;
-    box-shadow: 0px 0px 10px #7bbaf5;
+    box-shadow: 0px 0px 10px #edf066;
 }
 
 .education-academic-subtitle,
@@ -407,7 +414,7 @@ body{
 
 .contact-item{
     align-items: center;
-    background-color: #e8f4ff;
+    background-color: #ffffff;
     border: 1px solid #c2dcf4;
     color: #000;
     border-radius: 5px;
@@ -415,7 +422,14 @@ body{
     gap: 20px;
     padding: 20px;
     text-decoration: none;
+    transition: all 1s;
 }
+
+.contact-item:hover{
+    background-color: #bbbbbb;
+    color: #ffffff;
+}
+
 
 .contact-item-img{
     height: 30px;
@@ -463,6 +477,10 @@ body{
     }
 
     .contact-item{
+        justify-content: center;
+    }
+
+    .contact-item:hover{
         justify-content: center;
     }
 }

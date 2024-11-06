@@ -17,34 +17,34 @@ function showSkill(skill) {
 
     function validateParameter() {
         if (parameter == 'html') {
-            content = 'HTML is a markup language used to create web pages. Which tags are used to structure the content.'
+            content = 'HTML é uma linguagem de marcação usada para criar páginas da web. Quais tags são usadas para estruturar o conteúdo.'
         }
         else if (parameter == 'css') {
-            content = 'CSS is a language used to style the presentation of web pages by defining the design, layout, and visual appearance of HTML elements.'
+            content = 'CSS é uma linguagem usada para estilizar a apresentação de páginas da web, definindo o design, o layout e a aparência visual dos elementos HTML.'
         }
         else if (parameter == 'js') {
-            content = 'JavaScript is a programming language, widely used to create interactivity on web pages, allowing dynamic manipulation of content and behavior of page elements.'
+            content = 'JavaScript é uma linguagem de programação amplamente utilizada para criar interatividade em páginas web, permitindo a manipulação dinâmica do conteúdo e comportamento dos elementos da página.'
         }
         else if (parameter == 'tailwind') {
-            content = 'Tailwind CSS is a utility CSS framework that allows you to build web interfaces efficiently using predefined classes for styling.'
+            content = 'Tailwind CSS é uma estrutura CSS utilitária que permite construir interfaces web de forma eficiente usando classes predefinidas para estilo.'
         }
         else if (parameter == 'sass') {
-            content = 'Sass is a styling language (CSS preprocessor) that extends the CSS syntax, allowing the use of functions and nesting to make it easier to write and organize CSS code.'
-        }
-        else if (parameter == 'photoshop') {
-            content = 'Photoshop is an image editing software widely used for manipulating, retouching and creating graphics, photos and designs, with various editing tools.'
+            content = 'Sass é uma linguagem de estilo (pré-processador CSS) que estende a sintaxe CSS, permitindo o uso de funções e aninhamento para facilitar a escrita e organização do código CSS.'
         }
         else if (parameter == 'figma') {
-            content = 'Figma is a design tool that allows real-time creation and collaboration of user interface prototypes.'
+            content = 'Figma é uma ferramenta de design que permite a criação e colaboração em tempo real de protótipos de interface de usuário.'
         }
         else if (parameter == 'git') {
-            content = 'Git is a version control system that records changes to files, making it easier to manage the history of a software project.'
+            content = 'Git é um sistema de controle de versão que registra alterações em arquivos, facilitando o gerenciamento do histórico de um projeto de software.'
         }
         else if (parameter == 'react') {
-            content = 'React is a JavaScript library for building user interfaces. It is based on reusable components and uses a Virtual DOM to optimize UI updates, making it popular in dynamic web applications.'
+            content = 'React é uma biblioteca JavaScript para construção de interfaces de usuário. É baseado em componentes reutilizáveis ​​e usa um Virtual DOM para otimizar as atualizações da UI, tornando-o popular em aplicações web dinâmicas.'
         }
-        else if (parameter == 'vue') {
-            content = 'Vue.js is a JavaScript framework for building user interfaces. It is known for its simplicity and flexibility, allowing the creation of reactive components and being easy to integrate into existing projects.'
+        else if (parameter == 'nextjs') {
+            content = 'O Next.js é uma boa opção para quem já sabe usar o React e quer dar um passo adiante. Ele também é uma excelente escolha para quem está aprendendo sobre frameworks e deseja aprimorar suas habilidades em React.'
+        }
+        else if (parameter == 'typescript') {
+            content = 'O TypeScript é um superconjunto do JavaScript, ou seja, adiciona tipagem estática opcional à linguagem.'
         }
     }
 
